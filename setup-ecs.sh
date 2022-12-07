@@ -39,6 +39,9 @@ if [ ! -d ~/.config/nvim ]; then
 	mkdir -p ~/.config
 	git clone https://github.com/amogh09/nvim-config-lite.git ~/.config/nvim
 	git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.config/nvim/pack/packer/start/packer.nvim
+	
+	# Install libstdc++-static needed for treesitter parsers
+        sudo yum install libstdc++-static
 fi
 
 # Install go
