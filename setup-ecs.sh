@@ -16,6 +16,8 @@ sudo chsh -s "$(which zsh)"
 # oh my zsh
 if [[ -z "${ZSH}" ]]; then
 	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	echo "Run the setup again as oh-my-zsh installation exits the script"
+	exit 0
 fi
 
 # Install some tools
