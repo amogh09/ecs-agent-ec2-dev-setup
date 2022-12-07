@@ -50,7 +50,7 @@ if [ ! -d /usr/local/go ]; then
 	echo export GOPATH=~/go >> ~/.zshrc
 
 	# Install gopls
-	go install golang.org/x/tools/gopls@latest
+	/usr/local/go/bin/go install golang.org/x/tools/gopls@latest
 fi
 
 # Docker setup
